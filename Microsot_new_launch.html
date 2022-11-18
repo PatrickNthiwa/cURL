@@ -1,22 +1,4 @@
-# cURL
-
-```python
- 1.The Way to Download the Contents of a Remote Website to a Local File Using cURL in PHP<index.php>
-```
-In the first example, i am trying to view the home page of a Google website. The session was assigned with the curl_init(). This method will show the content of an assigned website into a particular curl_setopt() method. It will be saved as an html file for remote accessing.
-
-
-```python
-2.To Download a File from a Remote Site using cURL in PHP<file.php>
-```
-If the option CURLOPT_ FILE is activated, a remote file can be downloaded to our server. For example, the following code downloads "Microsoft new launch" from Microsoft company website and saves it to our server as the microsoft_new_launch.html:
-
-The url_name is nothing but an original resource location of the website. The handle session will manage the session details of the current website location.
-
-I use the curl_getinfo command to get more information about the request. This command allows us to get important technical information about the response, such as the status code (200 for success), and the size of the downloaded file.
-
-Responce
-`<?php
+<?php
 
 /*
 
@@ -223,4 +205,3 @@ $size = $dl->download();
 printf("Downloaded %u bytes to %s\n", $size, $dl->getFileName());
 
 ?>
-`
