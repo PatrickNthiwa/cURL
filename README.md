@@ -16,7 +16,7 @@ The url_name is nothing but an original resource location of the website. The ha
 I use the curl_getinfo command to get more information about the request. This command allows us to get important technical information about the response, such as the status code (200 for success), and the size of the downloaded file.
 
 Responce
-`<?php
+``<?php
 
 /*
 
@@ -222,5 +222,42 @@ $size = $dl->download();
 
 printf("Downloaded %u bytes to %s\n", $size, $dl->getFileName());
 
-?>
+?>`
 `
+```python
+3. Form Submission Using cURL in PHP
+```
+Here, i am going to create the following two files - submit.php, form.php.
+
+    Include the cURL script in the submit.php file.
+    The design details of the form is enclosed in the form.php file.
+In fact, form.php will be located on a remote server (although, for the sake of the example, both files may be placed on the same server). In addition, we'll use a form with three fields: first_Name, last_Name, and submit button.
+
+```python
+
+To Perform Basic HTTP Authentication With cURL in PHP
+```
+In order to authenticate with cURL, the following three options need to be set:
+
+$CURLOPT_HTTPAUTH
+CURLOPT_USERPWD– Through which we define the username and password.
+CURLOPT_RETURNTRANSFER$
+
+
+```python
+To Handle the Cookies in cURL in PHP
+```
+Cookies are used to recognize returning tourists and authenticated users on a website. In order to do this, cURL includes a method for saving cookies.
+
+The two key ways of dealing with cookies :
+
+    *CURLOPT COOKIEJAR– Defines the file that must be used to write cookies.*
+
+    *CURLOPT COOKIEFILE– This variable specifies the file from which the cookies will be read.*
+
+
+```python
+Conclusion
+```
+Using PHP's cURL extension gives one a quick and easy way to communicate with other websites, particularly APIs provided by third parties.
+You can use curl to talk and take data form simulation of apis usng api clients such as Postman and Soap Ui.
